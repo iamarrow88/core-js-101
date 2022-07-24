@@ -120,7 +120,7 @@ function removeLeadingAndTrailingWhitespaces(str) {
  */
 function repeatString(value, count) {
   let res = value;
-  for (let i = 0; i < +count - 1; i++) {
+  for (let i = 0; i < +count - 1; i += 1) {
     res += value;
   }
   return res;
@@ -226,12 +226,12 @@ function getRectangleString(/* width, height */) {
   const vertLine = '│';
 
   let subline = horLine;
-  for (let i = 0; i < width - 3; i++) {
+  for (let i = 0; i < width - 3; i += 1) {
     subline += horLine;
   }
 
   let sublineIn = ' ';
-  for (let i = 0; i < width - 3; i++) {
+  for (let i = 0; i < width - 3; i += 1) {
     sublineIn += ' ';
   }
 
@@ -240,7 +240,7 @@ function getRectangleString(/* width, height */) {
   const lastLine = ldAngle + subline + rdAngle;
 
   let middleLInes = '';
-  for (let i = 0; i < height - 2; i++) {
+  for (let i = 0; i < height - 2; i += 1) {
     middleLInes += middleLIne;
     middleLInes += '\n';
   }

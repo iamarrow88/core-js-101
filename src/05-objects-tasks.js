@@ -118,14 +118,13 @@ function fromJSON(proto, json) {
  */
 
 const cssSelectorBuilder = {
-  element(value) {
-    /* throw new Error('Not implemented'); */
-    return value;
+  element(/* value */) {
+    throw new Error('Not implemented');
+    /* return value; */
   },
 
-  id(value) {
-    /* throw new Error('Not implemented'); */
-    
+  id(/* value */) {
+    throw new Error('Not implemented');
   },
 
   class(/* value */) {
