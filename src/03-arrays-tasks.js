@@ -162,8 +162,8 @@ function getStringsLength(arr) {
  *    [ 1, 3, 4, 5 ], 2, 1  => [ 1, 2, 3, 4, 5 ]
  *    [ 1, 'b', 'c'], 0, 'x'  => [ 'x', 1, 'b', 'c' ]
  */
-function insertItem(/* arr, item, index */) {
-  /* let res = [];
+function insertItem(arr, item, index) {
+  let res = [];
   if (index === 0) {
     res = [...arr];
     res.unshift(item);
@@ -172,8 +172,8 @@ function insertItem(/* arr, item, index */) {
   const nose = arr.slice(0, index);
   nose.push(item);
   res = nose.concat(tail);
-  return res; */
-  throw new Error('Not implemented');
+  return res;
+  /* throw new Error('Not implemented'); */
 }
 
 /**
